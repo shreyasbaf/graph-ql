@@ -22,12 +22,11 @@ const AnimatedOuter = keyframes`
   
 `
 
-export const DoubleLoadingSpinner = styled.div`
+export const DoubleLoadingSpinner = styled.div<any>`
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
   ::before,
   ::after {
     content: '';

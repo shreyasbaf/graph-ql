@@ -1,6 +1,10 @@
 import { DoubleLoadingSpinner } from './LoadingSpinner.style'
 
-const LoadingSpinner = ({ innerSize = '20', outerSize='50' }) => {
+interface I_SpinnerProps{
+  innerSize?:any
+  outerSize?:any
+}
+const LoadingSpinner = ({ innerSize = '10', outerSize='30' }:I_SpinnerProps) => {
   return <DoubleLoadingSpinner innerSize={innerSize} outerSize={outerSize} />
 }
 
